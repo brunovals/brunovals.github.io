@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# logs
+*.log
+
+# node
+node_modules/
+
+# build artifacts
+dist/
+build/
+
+# environment variables
+.env
+
+# editor
+.vscode/
+.idea/
