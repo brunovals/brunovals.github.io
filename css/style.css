@@ -184,6 +184,25 @@ margin-bottom:6px;
 
 }
 
+.project-info .info-block {
+
+padding-top:10px;
+margin-top:10px;
+
+border-top:1px solid rgba(255,255,255,0.06);
+
+}
+
+.project-info .label {
+
+font-size:11px;
+letter-spacing:1px;
+color:#6e7681;
+
+margin-bottom:4px;
+
+}
+
 .meta {
 
 font-size:13px;
