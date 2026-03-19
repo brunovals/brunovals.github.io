@@ -138,10 +138,13 @@ font-size:26px;
 margin-bottom:80px;
 }
 
+/* KEY FIX HERE */
 .project {
 display:flex;
 gap:40px;
 align-items:flex-start;
+
+justify-content:center; /* ensures grouping stays tight */
 
 margin-bottom:80px;
 padding-bottom:40px;
@@ -153,7 +156,8 @@ border-bottom:1px solid rgba(255,255,255,0.06);
 border-bottom:none;
 }
 
-.project:nth-child(even) {
+/* FIXED alternating logic */
+.projects .project:nth-child(even) {
 flex-direction:row-reverse;
 }
 
@@ -170,6 +174,7 @@ border-radius:8px;
 
 .project-info {
 max-width:420px;
+text-align:left;
 }
 
 .project-info h3 {
