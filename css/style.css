@@ -134,16 +134,8 @@ gap:40px;
 align-items:flex-start;
 padding-bottom:60px;
 margin-bottom:60px;
-border-bottom:1px solid rgba(255,255,255,0.06);
-
-}
-
-.project {
+border-bottom:1px solid red;
 align-items: flex-start;
-}
-
-.project {
-
 transition:transform 0.2s ease;
 }
 
