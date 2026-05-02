@@ -172,10 +172,9 @@ margin-bottom:80px;
 /* KEY FIX HERE */
 .project {
 display:flex;
-gap:10px;
+gap:40px;
 align-items:flex-start;
 justify-content:flex-start;
-flex-direction:row-reverse;
 
 margin-bottom:80px;
 padding-bottom:40px;
@@ -189,7 +188,7 @@ border-bottom:none;
 
 /* FIXED alternating logic */
 .projects .project:nth-child(even) {
-flex-direction:row;
+flex-direction:row-reverse;
 }
 
 /* IMAGE */
