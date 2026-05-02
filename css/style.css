@@ -236,7 +236,7 @@ color:#9da5b4;
 margin-bottom:14px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 720px) {
 .header {
 padding:14px 20px;
 }
