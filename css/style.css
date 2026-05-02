@@ -169,38 +169,53 @@ font-size:26px;
 margin-bottom:80px;
 }
 
-.project {
-display:grid;
-grid-template-columns:minmax(320px, 520px) 10px minmax(160px, 420px);
-align-items:flex-start;
-justify-content:center;
+.project-table {
+width:100%;
+border-collapse:collapse;
+table-layout:fixed;
+}
 
-margin-bottom:80px;
-padding-bottom:40px;
+.project-content-col {
+width:520px;
+}
 
+.project-gap-col {
+width:10px;
+}
+
+.project-media-col {
+width:420px;
+}
+
+.project td {
+vertical-align:top;
+padding:0 0 40px;
 border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
-.project:last-child {
+.project + .project td {
+padding-top:80px;
+}
+
+.project:last-child td {
 border-bottom:none;
 }
 
-.project-info {
-grid-column:1;
+.project-gap-cell {
+padding-left:0;
+padding-right:0;
 }
 
-.project-media {
-grid-column:3;
-justify-self:start;
+.project-info-cell {
+text-align:right;
 }
 
-.projects .project:nth-child(even) .project-media {
-grid-column:1;
-justify-self:end;
+.project-media-cell {
+text-align:left;
 }
 
-.projects .project:nth-child(even) .project-info {
-grid-column:3;
+.project-media-cell-left {
+text-align:right;
 }
 
 /* IMAGE */
@@ -217,6 +232,7 @@ background:#0b0f18;
 }
 
 .project-media {
+display:inline-block;
 width:auto;
 max-width:420px;
 overflow:visible;
@@ -225,6 +241,8 @@ overflow:visible;
 /* TEXT */
 
 .project-info {
+display:inline-block;
+width:100%;
 max-width:520px;
 text-align:left;
 }
@@ -257,7 +275,7 @@ color:#9da5b4;
 margin-bottom:14px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 980px) {
 .header {
 padding:14px 20px;
 }
@@ -277,10 +295,12 @@ flex-direction:column;
 gap:24px;
 }
 
-.project {
-grid-template-columns:1fr;
-gap:24px;
-justify-items:center;
+.project-table,
+.project-table tbody,
+.project,
+.project td {
+display:block;
+width:100%;
 }
 
 .featured-media,
@@ -290,11 +310,27 @@ justify-items:center;
 max-width:100%;
 }
 
-.project-info,
-.project-media,
-.projects .project:nth-child(even) .project-info,
-.projects .project:nth-child(even) .project-media {
-grid-column:1;
-justify-self:center;
+.project td {
+padding:0;
+border-bottom:none;
+text-align:center;
+}
+
+.project + .project td:first-child {
+padding-top:80px;
+}
+
+.project-info-cell,
+.project-media-cell,
+.project-media-cell-left {
+text-align:center;
+}
+
+.project-gap-cell {
+display:none;
+}
+
+.project-info {
+text-align:left;
 }
 }
