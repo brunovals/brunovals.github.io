@@ -174,7 +174,8 @@ margin-bottom:80px;
 display:flex;
 gap:40px;
 align-items:flex-start;
-justify-content:flex-start;
+
+justify-content:center; /* ensures grouping stays tight */
 
 margin-bottom:80px;
 padding-bottom:40px;
@@ -207,7 +208,6 @@ background:#0b0f18;
 .project-media {
 width:auto;
 max-width:420px;
-flex:0 0 auto;
 overflow:visible;
 }
 
@@ -215,9 +215,12 @@ overflow:visible;
 
 .project-info {
 <<<<<<< HEAD
+<<<<<<< HEAD
 width:100%;
 flex:1 1 420px;
 min-width:320px;
+=======
+>>>>>>> parent of 525488d (Update style.css)
 max-width:520px;
 =======
 max-width:420px;
@@ -284,9 +287,5 @@ align-items:center;
 .featured-info,
 .project-info {
 max-width:100%;
-}
-
-.project-info {
-min-width:0;
 }
 }
