@@ -100,9 +100,17 @@ gap:50px;
 align-items:flex-start;
 }
 
-.featured-media img {
+.featured-media img,
+.featured-media video {
 width:520px;
 border-radius:10px;
+display:block;
+background:#0b0f18;
+}
+
+.featured-media video {
+aspect-ratio:16/9;
+object-fit:cover;
 }
 
 .featured-info {
@@ -163,11 +171,14 @@ flex-direction:row-reverse;
 
 /* IMAGE */
 
-.project-media img {
+.project-media img,
+.project-media video {
 width:420px;
 aspect-ratio:16/9;
 object-fit:cover;
 border-radius:8px;
+display:block;
+background:#0b0f18;
 }
 
 /* TEXT */
