@@ -174,8 +174,7 @@ margin-bottom:80px;
 display:flex;
 gap:40px;
 align-items:flex-start;
-
-justify-content:center; /* ensures grouping stays tight */
+justify-content:flex-start;
 
 margin-bottom:80px;
 padding-bottom:40px;
@@ -208,12 +207,16 @@ background:#0b0f18;
 .project-media {
 width:auto;
 max-width:420px;
+flex:0 0 auto;
 overflow:visible;
 }
 
 /* TEXT */
 
 .project-info {
+width:100%;
+flex:1 1 420px;
+min-width:320px;
 max-width:520px;
 text-align:left;
 }
@@ -277,5 +280,9 @@ align-items:center;
 .featured-info,
 .project-info {
 max-width:100%;
+}
+
+.project-info {
+min-width:0;
 }
 }
