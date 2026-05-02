@@ -198,7 +198,7 @@ flex-direction:row-reverse;
 .project-media video {
 width:auto;
 max-width:100%;
-height:clamp(190px, 30vw, 260px);
+height:clamp(220px, 32vw, 280px);
 object-fit:contain;
 border-radius:8px;
 display:block;
@@ -214,7 +214,7 @@ overflow:visible;
 /* TEXT */
 
 .project-info {
-max-width:420px;
+max-width:520px;
 text-align:left;
 }
 
