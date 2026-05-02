@@ -214,20 +214,7 @@ overflow:visible;
 /* TEXT */
 
 .project-info {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-width:100%;
-flex:1 1 420px;
-min-width:320px;
-=======
->>>>>>> parent of 525488d (Update style.css)
-=======
->>>>>>> parent of 525488d (Update style.css)
 max-width:520px;
-=======
-max-width:420px;
->>>>>>> parent of 0030f0f (Update style.css)
 text-align:left;
 }
 
