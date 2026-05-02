@@ -210,6 +210,8 @@ background:#0b0f18;
 .project-media {
 width:100%;
 max-width:420px;
+height:clamp(180px, 28vw, 236px);
+overflow:hidden;
 }
 
 /* TEXT */
