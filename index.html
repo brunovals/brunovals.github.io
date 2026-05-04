@@ -13,24 +13,15 @@
 
 <body>
 
-<header class="header">
-  <div class="header-left">
-    <img src="https://ik.imagekit.io/brunovals/Placeholder-Profile-Picture-webp.webp" class="profile-pic" alt="Brunovals profile photo">
+<div id="header-placeholder"></div>
 
-    <div class="profile-text">
-      <h1>Brunovals</h1>
-      <p class="title">Senior Gameplay Programmer</p>
-      <p class="exp">8+ Years Experience</p>
-    </div>
-  </div>
-
-  <div class="header-right">
-    <!--<a href="http://wa.me/62">Direct</a>-->
-    <a href="#">Itch</a>
-    <a href="https://www.linkedin.com/in/nauvalinsight/">LinkedIn</a>
-    <a href="mailto:nauvalinsight@gmail.com?subject=Unity%20Developer%20Job%20Offer&body=Hey%20Nauval%20!%0A%0AJust%20saw%20your%20portfolio%20and%20resume%2C%20and%20i%20think%20you%20might%20be%20one%20of%20the%20candidates%20we're%20looking%20for%2C%20can%20we%20talk%20a%20bit%20more%20about%20this%20position%20and%20your%20qualifications%20%3F">Email</a>
-  </div>
-</header>
+<script>
+fetch('/components/header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header-placeholder').innerHTML = data;
+  });
+</script>
 
 
 <section class="hero">
